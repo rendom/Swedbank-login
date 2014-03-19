@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Swedbank Auto login settings</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  </head>
+  <body>
+    <lable for="number">Personnummer: (Sparas lokalt på datorn)</lable>
+    <input type="text" name="number" id="number" placeholder="ååååmmddxxxx">
+    <lable for="method">Metod:</lable>
+    <select name="method" id="method">
+      <option value="ACTCARD">Säkerhetsdosa</option>
+      <option value="BIDKORT">BankID på kort</option>
+      <option value="MOBILBID">Mobilt BankID</option>
+      <option value="PIN6">Personlig kod</option>
+      <option value="FTGKOPPL">Företagskopplad dosa</option>
+    </select>
+    <input type="button" value="Save" id="saveSettings">
+    <script src="settings.js"></script>
+  </body>
+</html>

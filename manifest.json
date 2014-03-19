@@ -1,0 +1,19 @@
+{
+  "name": "Swedbank Auto login",
+  "version": "0.2",
+  "manifest_version": 2,
+  "description": ":)",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "settings.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://internetbank.swedbank.se/idp/portal/*"],
+      "js": ["autologin.js"]
+    }
+  ]
+}
